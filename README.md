@@ -11,13 +11,11 @@ Run it yourself:
 
 2) Load `chrome` folder as Chrome extension
 
-3) Open manifest.json under C# project
+3) Open `manifest.json` under C# project and update application name and chrome extension ID
 
-4) Update the application name and chrome extension ID
+4) Open `chrome\background.js` and update `app_name` to the same used above
 
-5) Open `chrome\background.js` and update `app_name` to the same used above
-
-6) Add the following key to windows registry:
+5) Add the following key to windows registry:
 
 ```
 Windows Registry Editor Version 5.00
@@ -25,4 +23,4 @@ Windows Registry Editor Version 5.00
 @="C:\\path\\to\\manifest.json"
 ```
 
-7) [optional] To generate the installer with Inno Setup, update the Registry section in `setup.iss` with your application name and chrome extension ID, respectively.
+6) [optional] To generate the installer with Inno Setup, update the Registry section in `setup.iss` with your application name and chrome extension ID, respectively.
