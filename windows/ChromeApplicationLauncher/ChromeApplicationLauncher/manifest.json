@@ -1,0 +1,9 @@
+{
+    "name": "fmatos.chromeapplicationlauncher",
+    "description": "Application Launcher for Chrome",
+    "path": "ChromeApplicationLauncher.exe",
+    "type": "stdio",
+    "allowed_origins": [
+      "chrome-extension://ojmdfhaidaemhiinkhhbidmgnmdejcgc/"
+    ]
+  }

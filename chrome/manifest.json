@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Application Launcher",
+    "description": "Quickly run applications with current tab URL as parameter!",
+    "version": "0.0.0.2",
+  
+    "options_ui": {
+      "page": "options.html",
+      "chrome_style": true      
+    },
+    "browser_action": {
+      "default_icon": "icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "nativeMessaging"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }

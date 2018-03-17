@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Test Extension Options</title>
+  <style>
+    body: { padding: 10px; }
+  </style>
+</head>
+
+<body>
+    <label>
+        Executable path
+        <input id="path" type="text" style="width:300px">        
+    </label>
+    <br/><br/>
+    <label>
+        Arguments ($url is active tab url)
+    </label>
+    <div id="args">
+    </div>
+  <button id="add">Add Argument</button><br/>
+  <button id="save">Save</button>
+  <div id="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>
