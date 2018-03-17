@@ -7,3 +7,4 @@ Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\Chr
 Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\obj\Release\ChromeApplicationLauncher.csproj.CopyComplete
 Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\obj\Release\ChromeApplicationLauncher.exe
 Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\obj\Release\ChromeApplicationLauncher.pdb
+Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\bin\Release\manifest.json

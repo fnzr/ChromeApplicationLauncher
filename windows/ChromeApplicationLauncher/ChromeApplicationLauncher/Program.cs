@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Text;
-using Microsoft.Win32;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -25,20 +23,6 @@ namespace ChromeApplicationLauncher
             p.Start();
             p.WaitForExit();
             Write("{\"result\" : 0}");
-        }
-
-        public static void AddRegistryEntry()
-        {
-            try
-            {
-                RegistryKey key;
-                key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Google\Chrome\NativeMessagingHosts\fmatos.chromeapplicationlauncher");
-                key.SetValue("", @"Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\manifest.json");
-            }catch (ApplicationException e)
-            {
-                //TODO properly handle exception cases
-                Console.WriteLine("Could not write key to registry!");
-            }
         }
 
         /** From https://stackoverflow.com/questions/30880709/c-sharp-native-host-with-chrome-native-messaging **/
