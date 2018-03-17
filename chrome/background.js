@@ -1,7 +1,8 @@
+const app_name = 'fmatos.chromeapplicationlauncher';
 
 function start(url) {    
     chrome.storage.sync.get({path: "", arguments: []}, function(items) {
-            var port = chrome.runtime.connectNative('fmatos.chromeapplicationlauncher');
+            var port = chrome.runtime.connectNative(app_name);
             var args = "";
             items.arguments.forEach(function(arg){
                 args += arg + " ";
