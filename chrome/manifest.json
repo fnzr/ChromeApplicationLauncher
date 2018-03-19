@@ -10,7 +10,8 @@
       "chrome_style": true      
     },
     "browser_action": {
-      "default_icon": "icon.png"
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
     },
     "permissions": [
       "activeTab",

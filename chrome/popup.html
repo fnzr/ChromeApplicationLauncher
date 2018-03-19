@@ -5,45 +5,33 @@
  value "popup.html".
  -->
 <html>
-  <head>
-    <title>Getting Started Extension's Popup</title>
+<head>
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
+    <title>Application Launcher</title>
     <style type="text/css">
-      body {
-        margin: 10px;
-        white-space: nowrap;
-      }
-
-      h1 {
-        font-size: 15px;
-      }
-
-      #container {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
+        body {
+            margin: 10px;
+            white-space: nowrap;
+        }
     </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
     <script src="popup.js"></script>
-  </head>
+</head>
 
-  <body>
-    <h1>Background Color Changer</h1>
-    <div id="container">
-      <span>Choose a color</span>
-      <select id="dropdown">
-        <option selected disabled hidden value=''></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-      </select>
+<body>
+<div class="card" style="width: 300px;">
+    <div id="popup-header" class="card-header">
+        <div class="input-group">
+            <select class="custom-select" id="launchers">
+                <option selected disabled hidden>Select Launcher</option>
+            </select>
+            <div class="input-group-append">
+                <button id="launch" class="btn btn-outline-secondary" type="button">Launch</button>
+            </div>
+        </div>
     </div>
-  </body>
+    <div class="card-body" style="padding: 0px;">
+        <ul id="task-list" class="list-group list-group-flush" style="padding: 0px;"></ul>
+    </div>
+</div>
+</body>
 </html>
