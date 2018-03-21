@@ -4,6 +4,6 @@
     "path": "ChromeApplicationLauncher.exe",
     "type": "stdio",
     "allowed_origins": [
-      "chrome-extension://ojmdfhaidaemhiinkhhbidmgnmdejcgc/"
+      "chrome-extension://labkjpaaacmloegnicdegekffelcbfck/"
     ]
   }

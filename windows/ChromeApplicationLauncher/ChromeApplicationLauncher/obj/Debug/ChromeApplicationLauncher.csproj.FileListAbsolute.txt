@@ -7,4 +7,5 @@ Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\Chr
 Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\obj\Debug\ChromeApplicationLauncher.csproj.CopyComplete
 Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\obj\Debug\ChromeApplicationLauncher.exe
 Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\obj\Debug\ChromeApplicationLauncher.pdb
+Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\bin\Debug\manifest.json
 Z:\repositories\Chrome\ApplicationLauncher\windows\ChromeApplicationLauncher\ChromeApplicationLauncher\obj\Debug\ChromeApplicationLauncher.csprojResolveAssemblyReference.cache

@@ -13,16 +13,24 @@ namespace ChromeApplicationLauncher
 
             JObject data = Read();
             //Console.WriteLine(arguments.ToString());
-            Process p = new Process();
-
-            Write(data["exec"].Value<string>());
-            Write(data["args"].Value<string>());
-            p.StartInfo.FileName = data["exec"].Value<string>();
-            p.StartInfo.Arguments = data["args"].Value<string>();
-            p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            var p = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = data["exec"].Value<string>(),
+                    Arguments = data["args"].Value<string>(),
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    CreateNoWindow = true
+                }
+            };
             p.Start();
+            while (!p.StandardOutput.EndOfStream)
+            {
+                Write(p.StandardOutput.ReadLine());
+                // do something with line
+            }
             p.WaitForExit();
-            Write("{\"result\" : 0}");
         }
 
         /** From https://stackoverflow.com/questions/30880709/c-sharp-native-host-with-chrome-native-messaging **/
